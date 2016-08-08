@@ -47,8 +47,10 @@ int equal_fn(void *key1, void *key2)
 {
         char *name1 = (char *)key1;
         char *name2 = (char *)key2;
+        printf("name1 %s\n", name1);
+        printf("name2 %s\n", name2);
 
-        return strcasecmp(name1, name2);
+        return strcasecmp(name1, name2) == 0 ? 1 : 0;
 }
 
 /*************************************************************************/
