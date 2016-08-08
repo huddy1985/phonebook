@@ -224,9 +224,6 @@ int main(int argc, char *argv[])
         clock_gettime(CLOCK_REALTIME, &start);
         //findName(input, e);
         pb_entry *pbety = search_hash(h, input);
-        if (!pbety) {
-                printf("search Nothing\n");
-        }
         clock_gettime(CLOCK_REALTIME, &end);
         cpu_time2 = diff_in_second(start, end);
 
